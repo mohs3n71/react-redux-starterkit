@@ -1,0 +1,26 @@
+# App for distribution
+dist/
+
+# Code coverage report
+coverage/
+
+# Node files and folders
+node_modules/
+npm-debug.log
+npm-shrinkwrap.json
+package-lock.json
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+#WebStorm idea files
+.idea/
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes

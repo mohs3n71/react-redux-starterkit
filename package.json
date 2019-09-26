@@ -1,0 +1,151 @@
+{
+  "name": "patient-monitoring-admin-console",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": "Mohsen Pouryazdan <mo.pour@medopad.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medopad/patient-monitoring-admin-console.git"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
+  "dependencies": {
+    "antd": "^2.13.6",
+    "axios": "^0.16.2",
+    "history": "^4.7.2",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-intl": "^2.4.0",
+    "react-color": "^2.13.8",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "redux-auth-wrapper": "^1.1.0",
+    "redux-immutable": "^4.0.0",
+    "redux-persist": "^4.10.1",
+    "redux-persist-immutable": "^4.3.1",
+    "redux-saga": "^0.15.6",
+    "reselect": "^3.0.1",
+    "styled-components": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.4.0",
+    "babel-preset-medopad": "^1.1.0",
+    "babel-preset-medopad-react": "^1.0.0",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "enzyme": "^2.9.0",
+    "enzyme-to-json": "^2.0.0",
+    "eslint-config-medopad": "^3.6.0",
+    "eslint-config-medopad-react": "^3.4.0",
+    "faker": "^4.1.0",
+    "html-webpack-plugin": "^2.30.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^21.1.0",
+    "jest-styled-components": "^4.6.0",
+    "jsdom": "^11.2.0",
+    "less": "^2.7.0",
+    "less-loader": "^4.0.5",
+    "less-plugin-clean-css": "^1.5.0",
+    "react-test-renderer": "^15.5.0",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.18.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "scripts": {
+    "clean": "rimraf ./dist/",
+    "lint": "eslint --ignore-path .gitignore . --ext .js",
+    "prepack:dev": "yarn run clean",
+    "pack:dev": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.js --history-api-fallback",
+    "prepack:prod": "yarn run clean",
+    "pack:prod": "cross-env NODE_ENV=production webpack --config ./config/webpack.js --progress",
+    "pretest": "yarn run lint",
+    "test": "cross-env NODE_ENV=test jest --coverage"
+  },
+  "theme": {
+    "primary-color": "#404040",
+    "info-color": "#118AB2",
+    "success-color": "#06D6A0",
+    "warning-color": "#FFD166",
+    "error-color": "#F74F52",
+    "highlight-color": "#EF476F",
+    "normal-color": "#F2F2F2",
+    "margin-base": "15px",
+    "padding-base": "15px",
+    "text-color": "#474747",
+    "text-color-dark": "#EDEDED",
+    "heading-color": "#5C5C5C",
+    "heading-color-dark": "#E6E6E6",
+    "font-family": "Arial, Helvetica, sans-serif",
+    "font-size-base": "14px",
+    "border-radius-base": "2px",
+    "border-radius-sm": "1px",
+    "border-color-split": "#E9E9E9",
+    "border-color-split-dark": "#595959",
+    "box-shadow-base": "0px 3px 6px rgba(0, 0, 0, 0.3)",
+    "component-background": "#FFFFFF",
+    "component-dark-background": "#404040",
+    "layout-body-background": "#ECECEC",
+    "layout-header-padding": "0px 15px",
+    "layout-header-background": "#404040",
+    "btn-height-base": "32px",
+    "btn-height-sm": "28px",
+    "btn-height-lg": "44px",
+    "btn-padding-base": "0px 15px",
+    "btn-padding-sm": "0px 10px",
+    "btn-padding-lg": "0px 20px",
+    "input-height-base": "32px",
+    "input-height-sm": "28px",
+    "input-height-lg": "44px",
+    "input-padding-horizontal": "15px",
+    "input-padding-vertical-base": "10px",
+    "input-padding-vertical-sm": "5px",
+    "input-padding-vertical-lg": "15px",
+    "input-placeholder-color": "#9A9A9A",
+    "card-head-background": "transparent"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "useBuiltIns": true,
+          "targets": {
+            "browsers": [
+              "last 2 versions"
+            ]
+          }
+        }
+      ],
+      "react"
+    ],
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": true
+        }
+      ],
+      "transform-runtime"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "\\.(less)$": "identity-obj-proxy"
+    }
+  }
+}

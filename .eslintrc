@@ -1,0 +1,16 @@
+extends:
+  - "medopad-react"
+
+rules:
+  node/no-unsupported-features:
+    - "error"
+    - ignores:
+      - "modules"
+  lodash/prefer-lodash-method:
+    - "error"
+    - ignoreMethods:
+      - "includes"
+      - "find"
+      - "map"
+      - "forEach"
+      - "replace"
