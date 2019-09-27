@@ -114,11 +114,6 @@ render(
           <Router history={history} >
             <Switch>
               <Redirect exact={true} from='/' to='/dashboard' />
-              <Redirect
-                exact={true}
-                from='/dashboard/hospitals'
-                to='/dashboard/hospitals/1'
-              />
               {privateRoutes}
               {publicRoutes}
             </Switch>
