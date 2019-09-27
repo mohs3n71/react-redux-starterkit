@@ -1,12 +1,12 @@
 {
-  "name": "patient-monitoring-admin-console",
+  "name": "react_redux_starterkit",
   "version": "0.0.0",
   "private": true,
   "license": "UNLICENSED",
-  "author": "Mohsen Pouryazdan <mo.pour@medopad.com>",
+  "author": "Mohsen Pouryazdan <mohs3n71@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/medopad/patient-monitoring-admin-console.git"
+    "url": "https://github.com/mohs3n71/react-redux-starterkit"
   },
   "engines": {
     "node": ">=8.0.0",
