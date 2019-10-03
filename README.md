@@ -2,6 +2,8 @@
 
 [![Code Style](https://img.shields.io/badge/code%20style-Medopad-brightgreen.svg?style=flat-square)](https://github.com/Medopad/eslint-config-medopad)
 
+This Starter kit helps you to learn how to use redux in a react application and also you can use it to start a new project fast and easy
+
 I've used Ant.Design(https://ant.design) for UI<br/>
 Redux-Saga as redux middleware<br/>
 Axios for Http Requests<br/>
