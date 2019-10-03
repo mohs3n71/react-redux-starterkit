@@ -5,7 +5,7 @@
 I've used Ant.Design(https://ant.design) for UI<br/>
 Redux-Saga as redux middleware<br/>
 Axios for Http Requests<br/>
-and Jest for Unit testing<br/>
+Jest for Unit testing<br/>
 and Lodash (https://lodash.com/) for having a better performance<br/>
 
 
