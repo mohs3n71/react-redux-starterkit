@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "antd": "^2.13.6",
-    "axios": "^0.16.2",
+    "axios": "^0.21.1",
     "history": "^4.7.2",
     "immutable": "^3.8.2",
     "lodash": "^4.17.4",
